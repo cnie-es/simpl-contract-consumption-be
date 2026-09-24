@@ -1,0 +1,89 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    {
+      "type": "Control",
+      "scope": "#/properties/type",
+      "label": "Destination Type",
+      "options": {
+        "readonly": true
+      }
+    },
+	{
+      "type": "Control",
+      "scope": "#/properties/deprovisioningEnabled",
+      "label": "Deprovisioning enabled",
+      "options": {
+        "readonly": true
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/accessServiceIdentifier",
+      "label": "Access Service Identifier",
+      "options": {
+        "placeholder": "Enter access service identifier"
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/requestorIdentifier",
+      "label": "Requestor Identifier",
+      "options": {
+        "placeholder": "Enter requestor identifier"
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/dateFrom",
+      "label": "Date From (Optional)",
+      "options": {
+        "placeholder": "Select start date",
+        "format": "date"
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/dateTo",
+      "label": "Date To (Optional)",
+      "options": {
+        "placeholder": "Select end date",
+        "format": "date"
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/format",
+      "label": "Format (Optional)",
+      "options": {
+        "placeholder": "Enter format specification"
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/service",
+      "label": "Service (Optional)",
+      "options": {
+        "placeholder": "Enter service specification"
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/action",
+      "label": "Action (Optional)",
+      "options": {
+        "placeholder": "Enter action specification"
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/consumerEmail",
+      "label": "Consumer Email Address",
+      "options": {
+        "placeholder": "Enter a valid email address",
+        "description": "Email address where data access information will be sent"
+      }
+    }
+  ]
+}
+

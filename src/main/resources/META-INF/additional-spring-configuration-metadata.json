@@ -1,0 +1,107 @@
+{"properties": [
+  {
+    "name": "web.mvc.cors.allowed-origins",
+    "type": "java.lang.String",
+    "description": "A description for 'web.mvc.cors.allowed-origins'"
+  },
+  {
+    "name": "web.mvc.bearer-token.required",
+    "type": "java.lang.String",
+    "description": "A description for 'web.mvc.bearer-token.required'"
+  },
+  {
+    "name": "web.mvc.bearer-token.allowed-paths",
+    "type": "java.lang.String",
+    "description": "A description for 'web.mvc.bearer-token.allowed-paths'"
+  },
+  {
+    "name": "edc-consumer.base-url",
+    "type": "java.lang.String",
+    "description": "A description for 'edc-consumer.base-url'"
+  },
+  {
+    "name": "edc-consumer.api-key-value",
+    "type": "java.lang.String",
+    "description": "A description for 'edc-consumer.api-key-value'"
+  },
+  {
+    "name": "openapi-config.servers",
+    "type": "java.lang.String",
+    "description": "A description for 'openapi-config.servers'"
+  },
+  {
+    "name": "kafka.transferProcessTopic",
+    "type": "java.lang.String",
+    "description": "A description for 'kafka.transferProcessTopic'"
+  },
+  {
+    "name": "kafka.backoff.interval",
+    "type": "java.lang.String",
+    "description": "A description for 'kafka.backoff.interval'"
+  },
+  {
+    "name": "kafka.backoff.multiplier",
+    "type": "java.lang.String",
+    "description": "A description for 'kafka.backoff.multiplier'"
+  },
+  {
+    "name": "kafka.backoff.max_failure",
+    "type": "java.lang.String",
+    "description": "A description for 'kafka.backoff.max_failure'"
+  },
+  {
+    "name": "kafka.transfer-process.topic",
+    "type": "java.lang.String",
+    "description": "A description for 'kafka.transfer-process.topic'"
+  },
+  {
+    "name": "kafka.auth.type",
+    "type": "java.lang.String",
+    "description": "A description for 'kafka.auth.type'"
+  },
+  {
+    "name": "kafka.auth.sasl.username",
+    "type": "java.lang.String",
+    "description": "A description for 'kafka.auth.sasl.username'"
+  },
+  {
+    "name": "kafka.auth.sasl.password",
+    "type": "java.lang.String",
+    "description": "A description for 'kafka.auth.sasl.password'"
+  },
+  {
+    "name": "kafka.fatal-if-broker-not-available",
+    "type": "java.lang.String",
+    "description": "A description for 'kafka.fatal-if-broker-not-available'"
+  },
+  {
+    "name": "feign.client.config.default.logger-level",
+    "type": "java.lang.String",
+    "description": "A description for 'feign.client.config.default.logger-level'"
+  },
+  {
+    "name": "feign.client.config.default.connect-timeout",
+    "type": "java.lang.String",
+    "description": "A description for 'feign.client.config.default.connect-timeout'"
+  },
+  {
+    "name": "feign.client.config.default.read-timeout",
+    "type": "java.lang.String",
+    "description": "A description for 'feign.client.config.default.read-timeout'"
+  },
+  {
+    "name": "openapi-config.title",
+    "type": "java.lang.String",
+    "description": "A description for 'openapi-config.title'"
+  },
+  {
+    "name": "connector-adapter.tier1-gateway.url",
+    "type": "java.lang.String",
+    "description": "A description for 'connector-adapter.tier1-gateway.url'"
+  },
+  {
+    "name": "connector-adapter.service.url",
+    "type": "java.lang.String",
+    "description": "A description for 'connector-adapter.service.url'"
+  }
+]}

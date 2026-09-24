@@ -1,0 +1,77 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    {
+      "type": "Control",
+      "scope": "#/properties/type",
+      "label": "Destination Type",
+      "options": {
+        "readonly": true
+      }
+    },
+	{
+      "type": "Control",
+      "scope": "#/properties/deprovisioningEnabled",
+      "label": "Deprovisioning enabled",
+      "options": {
+        "readonly": true
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/region",
+      "label": "Region",
+      "options": {
+        "enumTitles": ["Germany (de)", "United States (us)", "United Kingdom (uk)"]
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/storage",
+      "label": "Storage Endpoint URL"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/bucketName",
+      "label": "Bucket Name",
+      "options": {
+        "placeholder": "Enter bucket name (lowercase, 3-63 characters)"
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/path",
+      "label": "Path",
+      "options": {
+        "placeholder": "Enter path where file will be stored"
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/objectName",
+      "label": "Object Name",
+      "options": {
+        "placeholder": "Enter file name"
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/accessKey",
+      "label": "Access Key"
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/secretKey",
+      "label": "Secret Key",
+      "options": {
+        "format": "password"
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/keyName",
+      "label": "Key Name"
+    }
+  ]
+}
+

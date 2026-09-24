@@ -1,0 +1,22 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    {
+      "type": "Control",
+      "scope": "#/properties/type",
+      "label": "Transfer Type",
+      "options": {
+        "readonly": true
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/consumerEmail",
+      "label": "Consumer Email Address",
+      "options": {
+        "placeholder": "Enter a valid email address",
+        "description": "Email address where transfer notifications will be sent"
+      }
+    }
+  ]
+}

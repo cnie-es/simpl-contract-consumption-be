@@ -1,0 +1,28 @@
+FROM eclipse-temurin:21@sha256:92a2a4d7a928d057e7bd999c418d66c26a34eb9a0442f3ab67721c3f88110b2d
+
+# EUPL-1.2 (Art. 5): this image ships a modified version of SIMPL contract-consumption-be. The
+# licence, the third-party notices and the modification notice travel with the image, and the
+# labels below point to the repository where the complete corresponding source code is available.
+LABEL org.opencontainers.image.title="contract-consumption-be (CNIE-ES fork)" \
+      org.opencontainers.image.description="Modified version of SIMPL contract-consumption-be (upstream commit ecf9d4f), modified by the EDNEL-RIOJA project team for CNIE-ES between 2026-05-19 and 2026-09-10. See /licenses/NOTICE.EDNEL.md." \
+      org.opencontainers.image.version="1.20.2-edval" \
+      org.opencontainers.image.vendor="CNIE-ES" \
+      org.opencontainers.image.licenses="EUPL-1.2" \
+      org.opencontainers.image.source="https://github.com/cnie-es/simpl-contract-consumption-be"
+
+RUN groupadd -g 1001 simplgroup && useradd -u 1001 -g simplgroup -m simpluser
+
+WORKDIR /home/simpluser
+
+# The release/build.sh hook produces the artifact; the image only copies it.
+COPY pipeline.variables.sh .
+COPY target/contract-consumption-be.jar app.jar
+
+# The notices must travel with every copy of the Work (EUPL-1.2, Art. 5).
+COPY LICENSE NOTICE NOTICE.json NOTICE.EDNEL.md THIRD_PARTY_LICENCES.md THIRD_PARTY_LICENCES.xml /licenses/
+
+RUN chown -R simpluser:simplgroup /home/simpluser
+
+USER simpluser
+
+ENTRYPOINT ["java", "-jar", "/home/simpluser/app.jar"]

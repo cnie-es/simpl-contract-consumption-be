@@ -1,0 +1,30 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    {
+      "type": "Control",
+      "scope": "#/properties/type",
+      "label": "Destination Type",
+      "options": {
+        "readonly": true
+      }
+    },
+	{
+      "type": "Control",
+      "scope": "#/properties/deprovisioningEnabled",
+      "label": "Deprovisioning enabled",
+      "options": {
+        "readonly": true
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/baseUrl",
+      "label": "Base URL",
+      "options": {
+        "placeholder": "Enter HTTP endpoint URL (e.g., https://example.com/data)"
+      }
+    }
+  ]
+}
+

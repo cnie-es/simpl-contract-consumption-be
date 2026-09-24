@@ -1,0 +1,31 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    {
+      "type": "Control",
+      "scope": "#/properties/type",
+      "label": "Destination Type",
+      "options": {
+        "readonly": true
+      }
+    },
+	{
+      "type": "Control",
+      "scope": "#/properties/deprovisioningEnabled",
+      "label": "Deprovisioning enabled",
+      "options": {
+        "readonly": true
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/consumerEmail",
+      "label": "Consumer Email Address",
+      "options": {
+        "placeholder": "Enter a valid email address",
+        "description": "Email address where data access information will be sent"
+      }
+    }
+  ]
+}
+

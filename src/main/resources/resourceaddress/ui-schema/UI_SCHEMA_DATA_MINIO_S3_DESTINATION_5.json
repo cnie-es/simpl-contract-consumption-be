@@ -1,0 +1,55 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    {
+      "type": "Control",
+      "scope": "#/properties/type",
+      "label": "Destination Type",
+      "options": {
+        "readonly": true
+      }
+    },
+	{
+      "type": "Control",
+      "scope": "#/properties/deprovisioningEnabled",
+      "label": "Deprovisioning enabled",
+      "options": {
+        "readonly": true
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/endpoint",
+      "label": "MinIO Endpoint URL",
+      "options": {
+        "placeholder": "Enter MinIO server endpoint URL"
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/bucketName",
+      "label": "Bucket Name",
+      "options": {
+        "placeholder": "Enter bucket name (lowercase, 3-63 characters)"
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/objectName",
+      "label": "Object Name",
+      "options": {
+        "placeholder": "Enter object name where data will be stored"
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/consumerEmail",
+      "label": "Consumer Email Address",
+      "options": {
+        "placeholder": "Enter a valid email address",
+        "description": "Email address where data access information will be sent"
+      }
+    }
+  ]
+}
+

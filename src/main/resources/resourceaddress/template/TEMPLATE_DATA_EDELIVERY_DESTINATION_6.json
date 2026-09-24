@@ -1,0 +1,70 @@
+{
+	"type": "object",
+	"required": [
+		"type",
+		"accessServiceIdentifier",
+		"requestorIdentifier"
+	],
+	"properties": {
+		"type": {
+			"type": "string",
+			"const": "eDelivery",
+			"default": "eDelivery"
+		},
+		"deprovisioningEnabled": {
+			"type": "string",
+		    "const": "false",
+		    "default": "false"
+		},
+		"accessServiceIdentifier": {
+			"type": "string",
+			"minLength": 1,
+			"maxLength": 255,
+			"description": "Access service identifier for eDelivery"
+		},
+		"requestorIdentifier": {
+			"type": "string",
+			"minLength": 1,
+			"maxLength": 255,
+			"description": "Requestor identifier for eDelivery"
+		},
+		"dateFrom": {
+			"type": "string",
+			"format": "date",
+			"description": "Start date for data retrieval (optional)"
+		},
+		"dateTo": {
+			"type": "string",
+			"format": "date",
+			"description": "End date for data retrieval (optional)"
+		},
+		"format": {
+			"oneOf": [
+				{
+					"type": "string"
+				},
+				{
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			],
+			"description": "Data format specification (can be string or list of strings)"
+		},
+		"service": {
+			"type": "string",
+			"description": "Service specification (optional)"
+		},
+		"action": {
+			"type": "string",
+			"description": "Action specification (optional)"
+		},
+		"consumerEmail": {
+			"type": "string",
+			"format": "email",
+			"description": "Email address where data access information will be sent"
+		}
+	}
+}
+

@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "required": [
+    "type",
+    "baseUrl"
+  ],
+  "properties": {
+    "type": {
+      "type": "string",
+      "const": "HttpData",
+      "default":"HttpData"
+    },
+	"deprovisioningEnabled": {
+		"type": "string",
+	    "const": "false",
+	    "default": "false"
+	},
+    "baseUrl": {
+      "type": "string",
+      "format": "uri",
+      "description": "The base URL for the HTTP data endpoint"
+    }
+  }
+}

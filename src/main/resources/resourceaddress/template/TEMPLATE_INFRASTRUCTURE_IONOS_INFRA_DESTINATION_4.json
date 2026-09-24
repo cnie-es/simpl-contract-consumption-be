@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "required": [
+    "type"
+  ],
+  "properties": {
+    "type": {
+      "type": "string",
+      "const": "Infrastructure",
+      "default":"Infrastructure"
+    },
+	"deprovisioningEnabled": {
+		"type": "string",
+	    "const": "false",
+	    "default": "false"
+	},
+    "consumerEmail": {
+      "type": "string",
+      "format": "email",
+      "pattern": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$",
+      "description": "The email address of the consumer, must be in a valid email format"
+    }
+  }
+}

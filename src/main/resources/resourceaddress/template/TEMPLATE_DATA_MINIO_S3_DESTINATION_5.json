@@ -1,0 +1,43 @@
+{
+	"type": "object",
+	"required": [
+		"type",
+		"bucketName",
+		"objectName",
+		"endpoint"
+	],
+	"properties": {
+		"type": {
+			"type": "string",
+			"const": "MinioS3",
+			"default": "MinioS3"
+		},
+		"deprovisioningEnabled": {
+			"type": "string",
+		    "const": "false",
+		    "default": "false"
+		},
+		"bucketName": {
+			"type": "string",
+			"pattern": "^[a-z0-9.-]{3,63}$",
+			"description": "Bucket name must be between 3 and 63 characters and lowercase"
+		},
+		"objectName": {
+			"type": "string",
+			"minLength": 1,
+			"maxLength": 1024,
+			"description": "Object name where data will be stored"
+		},
+		"endpoint": {
+			"type": "string",
+			"format": "uri",
+			"description": "MinIO server endpoint URL"
+		},
+		"consumerEmail": {
+			"type": "string",
+			"format": "email",
+			"description": "Email address where data access information will be sent"
+		}
+	}
+}
+
